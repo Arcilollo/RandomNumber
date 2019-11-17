@@ -1,6 +1,6 @@
 # RandomNumber
 
-RandomNumber is an application for Android written in Java where you can generate a number between 0 and a maximun of 100.
+RandomNumber is an application for Android written in Java where you can generate a random number between 0 and a maximun of 100 or a random sauce.
 
 It as also has a dark mode if you have turned on dark mode on your device.
 
