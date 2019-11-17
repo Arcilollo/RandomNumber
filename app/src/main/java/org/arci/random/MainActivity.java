@@ -3,9 +3,11 @@ package org.arci.random;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Button;
+import android.widget.Switch;
 import java.util.*;
 
 public class MainActivity extends Activity {
@@ -14,6 +16,7 @@ public class MainActivity extends Activity {
     TextView textview;
     TextView result;
     Button button;
+    Button buttonS;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,7 @@ public class MainActivity extends Activity {
         textview = (TextView)findViewById(R.id.Counter);
         result = (TextView)findViewById(R.id.Result);
         button = (Button)findViewById(R.id.button);
+        buttonS = (Button)findViewById(R.id.buttonS);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,11 +37,18 @@ public class MainActivity extends Activity {
             }
         });
 
+        buttonS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View TextView) {
+                result.setText(String.valueOf(r.nextInt(291334)));
+            }
+        });
+
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
 
-                textview.setText(" " + i);
+                textview.setText("" + i);
 
             }
 
