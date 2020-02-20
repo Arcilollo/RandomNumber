@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
         buttonS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View TextView) {
-                result.setText(String.valueOf(r.nextInt(291334)));
+                result.setText(String.valueOf(r.nextInt(302268)));
             }
         });
 
